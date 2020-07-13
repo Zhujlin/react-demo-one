@@ -13,7 +13,7 @@ class Iframe extends Component {
 
     return (
       <div className="Iframe">
-        <iframe className="nested_pages" src="https://fanyi.baidu.com/translate"></iframe>
+        <iframe className="nested_pages" src="https://fanyi.baidu.com/translate" title="baidu"></iframe>
       </div>
     )
   }

@@ -48,9 +48,11 @@ class Demo extends Component {
     console.log("发送请求")
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
-      if (xhr.readyState == 4) {
-        if (xhr.status >= 200 && xhr.status < 300 || xhr.status == 304) {
+      if (xhr.readyState === 4) {
+        if (xhr.status >= 200 && xhr.status < 300) {
           // info.innerHTML = xhr.responseText;
+          console.log(xhr.responseText);
+        } else if (xhr.status === 304) {
           console.log(xhr.responseText);
         }
       }

@@ -71,7 +71,7 @@ class RotationChart extends Component {
                 {
                   imgList.map((item, index) => {
                     return <li key={index}>
-                      <img src={item.picUrl || "#"}></img>
+                      <img src={item.picUrl || "#"} alt=""></img>
                     </li>
                   })
                 }
