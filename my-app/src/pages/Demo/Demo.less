@@ -1,0 +1,72 @@
+.Demo{
+  height: 100%;
+  flex: 1;
+  position: relative;
+  button{
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .picker_father{
+    display: inline-table;
+    width: 250px;
+    margin: 20px 0 0 20px;
+    height: 32px;
+  }
+  .select_father{
+    display: inline-table;
+    width: 250px;
+    margin: 20px 0 0 20px;
+    height: 32px;
+  }
+  .img_father{
+    margin: 20px 0 0 20px;
+    width: 500px;
+    height: 150px;
+  }
+  .icon_father{
+    display: inline-table;
+    width: 250px;
+    margin: 20px 0 0 20px;
+    height: 32px;
+    .arrow{
+      display: inline-block;
+      // content: "";
+      // position: absolute;
+      // top: 0;
+      // bottom: 0;
+      // right: 0;
+      // margin: auto 11px;
+      width: 8px;
+      height: 8px;
+      // transform: rotate(135deg) translateY(50%);
+      transform: rotate(135deg);
+      transition: all 0.3s;
+      border-top: 2px solid red;
+      border-right: 2px solid red;
+
+      margin: 0 0 0 30px;
+    }
+    .triangle{
+      display: inline-block;
+      // width: 0;
+      // height: 0;
+      /* border-color: transparent transparent red; */
+      /* 上边框 左右边框 下边框 */
+      border-color: rgba(0, 0, 0, 0) transparent red transparent;
+      /* 上边框 右边框 下边框 左边框 */
+      border-width: 0 10px 10px;
+      border-style: solid;
+      margin: 0 20px;
+    }
+    .Yes{
+      display: inline-block;
+      transform: rotate(45deg) scale(1);
+      width: 5px;
+      height: 8px;
+      border: 2px solid red;
+      border-top: 0;
+      border-left: 0;
+    }
+  }
+}

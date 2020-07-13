@@ -1,0 +1,70 @@
+@import (reference) "../assets/css/BasicLess.less";
+
+#root {
+  .App {
+    .page_index {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      .page_index_container {
+        height: calc(100% - 0rem);
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 8% 92% 00%;
+        grid-template-areas:
+          "h h h h h h h h h h h h"
+          "m m c c c c c c c c c c";
+        .page_index_item {
+
+        }
+        .page_index_header {
+          grid-area: h;
+          .bg(@c-b);
+          display: flex;
+          align-items: center;
+          .page_index_title{
+            margin: 0 0 0 3rem;
+          }
+        }
+        .page_index_menu {
+          grid-area: m;
+          padding: 1rem 0;
+          .page_index_menu_highAndLow {
+            height: 100%;
+            border-right: 0.01rem solid @split-line;
+            padding: 0 1rem 0 0;
+            .page_index_menu_leftAndRight{
+              height: 100%;
+            }
+          }
+        }
+
+        .page_index_content {
+          grid-area: c;
+          padding: 1rem;
+          display: flex;
+          .page_index_content_paddingBox{
+            height: 100%;
+            flex: 1;
+            display: flex;
+            justify-content: center; //左右
+            align-items: center; //上下
+            .border();
+            // .page-loading {
+            //   width: 20rem;
+            //   height: auto;
+            // }
+          }
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .page_index_container {
+          grid-template-areas:
+            "h h h h h h m m m m m m"
+            "c c c c c c c c c c c c";
+        }
+      }
+    }
+  }
+}

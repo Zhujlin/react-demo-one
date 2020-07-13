@@ -1,0 +1,137 @@
+.LittleGame{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  .box{
+    display: inline-block;
+    height: 100%;
+    width: 284px;
+    vertical-align: top;
+    .child_box{
+      height: 100%;
+      width: 100%;
+      // display: flex;
+      // justify-content: space-evenly;
+      // flex-flow: wrap-reverse;
+      li{
+        display: inline-block;
+        width: 131px;
+        height: 200px;
+        border: 1px solid rgba(255, 0, 0, 1);
+        border-radius: 10px;
+        position: relative;
+        margin: 0 10px 0 0;
+        cursor: pointer;
+        &:hover{
+          border-width: 3px;
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+          // background-color: rgba(255, 0, 0, 0.2);
+        }
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+        }
+      }
+      .isChoose{
+        border-width: 3px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+        background-color: rgba(255, 0, 0, 0.2);
+      }
+    }
+  }
+  .operator{
+    display: inline-block;
+    width: 153px;
+    height: 100%;
+    vertical-align: top;
+    .child_box{
+      height: 100%;
+      width: 100%;
+      // justify-content: center;
+      li{
+        display: inline-block;
+        width: 65.5px;
+        height: 100px;
+        margin: 0 10px 0 0;
+        border: 1px solid rgba(255, 215, 0, 1);
+        &:hover{
+          background-color: rgba(255, 215, 0, 0.5);
+        }
+        span {
+
+        }
+      }
+      .isChoose{
+        background-color: rgba(255, 215, 0, 0.5);
+      }
+    }
+  }
+  .compute{
+    height: 100%;
+    width: 380px;
+    // border-radius: 10px;
+    vertical-align: top;
+    // position: relative;
+    display: inline-block;
+    .location_box{
+      // position: absolute;
+      margin: 0px 0 0 50px;
+      .span{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 2.5px;
+        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        text-align: center;
+        transition: all 0.8s solid;
+        cursor: pointer;
+        &:hover{
+          box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.2)
+        }
+        &:nth-child(8):hover {
+          box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.3);
+          cursor: default;
+        }
+        &:nth-child(9):hover {
+          box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.3);
+          cursor: default;
+        }
+      }
+    }
+  }
+  .Result{
+    height: 100%;
+    width: 267px;
+    // border-radius: 10px;
+    padding: 0 0 0 60px;
+    display: inline-block;
+    .child_box{
+      li{
+        border: 1px solid #333;
+        cursor: auto;
+        &:hover{
+          border-width: 1px;
+          background-color: #fff;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .memo_box{
+    position: fixed;
+    top: 200px;
+    right: 100px;
+  }
+  .useTime{
+    position: fixed;
+    top: 150px;
+    right: 100px;
+  }
+}
